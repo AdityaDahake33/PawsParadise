@@ -25,10 +25,10 @@
   --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
   --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.2);
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 6px;
+  --radius-xl: 6px;
   --font-display: 'Roboto', sans-serif;
   --font-body: 'Roboto', sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,7 +79,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.95rem;
-  border-radius: 100px;
+  border-radius: 4px;
   padding: 0.75rem 1.75rem;
   transition: var(--transition);
   white-space: nowrap;
@@ -126,7 +126,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   padding: 0.9rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 100px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -145,7 +145,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   padding: 0.88rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 100px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -159,7 +159,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .btn--hero-icon {
   width: 52px;
   height: 52px;
-  border-radius: 50%;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: var(--clr-white);
@@ -199,7 +199,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   color: var(--clr-accent);
   background: #EBCBA4;
   padding: 0.35rem 1rem;
-  border-radius: 100px;
+  border-radius: 4px;
   margin-bottom: 1rem;
 }
 .section-tag--light {
@@ -395,13 +395,15 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--clr-accent);
-  background: rgba(163, 52, 45, 0.2);
-  border: 1px solid rgba(163, 52, 45, 0.5);
-  padding: 0.4rem 1rem;
-  border-radius: 100px;
+  color: #FFFFFF;
+  background: rgba(163, 52, 45, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
   margin-bottom: 1.5rem;
   animation: fadeSlideUp 0.8s 0.2s both;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .hero__headline {
   font-family: var(--font-display);
@@ -632,7 +634,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   gap: 0.5rem;
   margin-bottom: 2.5rem;
   background: #FFFFFF;
-  border-radius: 100px;
+  border-radius: 6px;
   padding: 0.4rem;
   width: fit-content;
   margin-inline: auto;
@@ -643,7 +645,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.65rem 1.5rem;
-  border-radius: 100px;
+  border-radius: 4px;
   color: var(--clr-text);
   transition: var(--transition);
   display: flex;
@@ -850,12 +852,13 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .review-card {
   background: var(--clr-white);
   border: 1px solid var(--clr-border);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
+  border-radius: 6px;
+  padding: 1.5rem;
   min-width: calc((100% - 3rem) / 3);
   flex-shrink: 0;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-slow);
+  overflow: hidden;
 }
 .review-card:hover {
   box-shadow: var(--shadow-md);
@@ -866,40 +869,55 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 .review-card__header img {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #EBCBA4;
   flex-shrink: 0;
 }
-.review-card__header h4 { font-weight: 700; font-size: 0.95rem; }
-.review-card__header span { font-size: 0.8rem; color: var(--clr-text); }
+.review-card__header h4 { 
+  font-weight: 700; 
+  font-size: 0.9rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.review-card__header span { 
+  font-size: 0.75rem; 
+  color: var(--clr-text);
+  width: 100%;
+  word-break: break-word;
+}
 .review-card__stars {
-  margin-left: auto;
+  margin-left: 0;
   color: #f5a623;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   display: flex;
   gap: 2px;
+  margin-top: 0.5rem;
 }
 .review-card p {
-  font-size: 0.93rem;
+  font-size: 0.88rem;
   color: var(--clr-text);
-  line-height: 1.7;
+  line-height: 1.6;
   font-style: italic;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
 }
 .review-card__footer {
-  margin-top: 1.25rem;
-  font-size: 0.78rem;
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--clr-text);
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  word-break: break-word;
 }
 .review-card__footer i { color: #4285f4; }
 
@@ -913,7 +931,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .reviews__arrow {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 4px;
   border: 2px solid var(--clr-border);
   background: var(--clr-white);
   color: var(--clr-text);
@@ -934,15 +952,15 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .review-dot {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 2px;
   background: #EBCBA4;
-  cursor: pointer;
   transition: var(--transition);
 }
 .review-dot.active {
   background: var(--clr-accent);
-  width: 24px;
-  border-radius: 4px;
+  /* Allow content to expand vertically and wrap naturally */
+  overflow: visible;
+  border-radius: 2px;
 }
 
 /* ============================================================
@@ -953,12 +971,12 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   background: #FFFFFF;
 }
 .video-section__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-.video-section__content .section-tag { display: inline-block; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .video-section__content .section-tag { display: inline-block; }
 .video-section__content .section-title {
   text-align: left;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -1043,6 +1061,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .video-reel-badge i {
   font-size: 1.5rem;
   background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1106,6 +1125,22 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   gap: 1.25rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-slow);
+
+/* Responsive adjustments for review cards */
+@media (max-width: 1024px) {
+  .review-card {
+    min-width: calc((100% - 1.5rem) / 2);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .review-card {
+    min-width: calc(100% - 1rem);
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
 }
 .address-card:hover {
   box-shadow: var(--shadow-md);
@@ -1227,9 +1262,9 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 .footer__socials a:hover { background: var(--clr-accent); border-color: var(--clr-accent); color: white; transform: scale(1.1); }
 .footer__col h5 {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  /* Ensure very long sentences break onto next lines */
+  word-break: break-word;
+  overflow-wrap: anywhere;
   letter-spacing: 0.1em;
   color: var(--clr-white);
   margin-bottom: 1.25rem;
@@ -1349,7 +1384,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .why-us__features { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
-  .review-card { min-width: calc((100% - 1.5rem) / 2); }
+  .review-card { min-width: calc((100% - 1.5rem) / 2); padding: 1.25rem; }
 }
 
 @media (max-width: 900px) {
@@ -1366,7 +1401,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .hero__content { margin-left: 0; }
   .hero__scroll { display: none; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .review-card { min-width: 85vw; }
+  .review-card { min-width: calc(100% - 1rem); padding: 1.5rem; }
+  .reviews__track-wrapper { margin-bottom: 1.5rem; }
   .footer__grid { grid-template-columns: 1fr; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .trust-bar__grid { gap: 0.5rem 1rem; }
@@ -1375,6 +1411,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .floating-wa span { display: none; }
   .floating-wa { padding: 0.85rem; border-radius: 50%; }
   .footer__bottom-inner { flex-direction: column; text-align: center; }
+  .review-card__header { flex-wrap: wrap; }
+  .review-card__stars { margin-left: 0; margin-top: 0.75rem; }
 }
 
 @media (max-width: 380px) {
