@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawsParadise Pet Store – Hyderabad's Premium Pet Destination</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon"><i class="fa-solid fa-paw"></i></span>
+        <span class="nav__logo-text">Paws<strong>Paradise</strong></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#stores">Our Stores</a></li>
+        <li><a href="#categories">Products</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Find Us</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="tel:+914000000000" class="btn btn--outline btn--sm"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/914000000000" class="btn btn--primary btn--sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#stores" onclick="closeMobile()">Our Stores</a></li>
+        <li><a href="#categories" onclick="closeMobile()">Products</a></li>
+        <li><a href="#why-us" onclick="closeMobile()">Why Us</a></li>
+        <li><a href="#reviews" onclick="closeMobile()">Reviews</a></li>
+        <li><a href="#location" onclick="closeMobile()">Find Us</a></li>
+        <li><a href="tel:+914000000000"><i class="fa-solid fa-phone"></i> Call Now</a></li>
+        <li><a href="https://wa.me/914000000000"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION – Full-width CSS Slider
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Slides -->
+    <div class="hero__slides">
+      <div class="hero__slide hero__slide--1">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__slide hero__slide--2">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__slide hero__slide--3">
+        <div class="hero__overlay"></div>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <span class="hero__tag">Hyderabad's Premium Pet Destination</span>
+      <h1 class="hero__headline">
+        Everything Your Pet<br />
+        <em>Deserves & More</em>
+      </h1>
+      <p class="hero__sub">
+        Premium food, expert grooming, handpicked toys & trusted advice — all under one roof at our two beautiful Hyderabad stores.
+      </p>
+      <div class="hero__actions">
+        <a href="#stores" class="btn btn--hero-primary"><i class="fa-solid fa-store"></i> Visit Store Today</a>
+        <a href="https://maps.google.com" class="btn btn--hero-outline" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+        <a href="tel:+914000000000" class="btn btn--hero-icon" title="Call Now"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/914000000000" class="btn btn--hero-icon btn--wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="hero__indicators">
+      <span class="hero__dot active"></span>
+      <span class="hero__dot"></span>
+      <span class="hero__dot"></span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll">
+      <span></span>
+      <p>Scroll to explore</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST BAR
+  ============================================================ -->
+  <section class="trust-bar">
+    <div class="container trust-bar__grid">
+      <div class="trust-bar__item">
+        <i class="fa-solid fa-shield-heart"></i>
+        <span>100% Pet-Safe Products</span>
+      </div>
+      <div class="trust-bar__item">
+        <i class="fa-solid fa-award"></i>
+        <span>8+ Years of Excellence</span>
+      </div>
+      <div class="trust-bar__item">
+        <i class="fa-solid fa-paw"></i>
+        <span>10,000+ Happy Pets</span>
+      </div>
+      <div class="trust-bar__item">
+        <i class="fa-solid fa-scissors"></i>
+        <span>Expert Grooming Spa</span>
+      </div>
+      <div class="trust-bar__item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>2 Store Locations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STORE SHOWCASE SECTION
+  ============================================================ -->
+  <section class="stores" id="stores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Stores</span>
+        <h2 class="section-title">Two Beautiful Stores,<br />One Loving Mission</h2>
+        <p class="section-sub">Step inside a world crafted for your pets — spacious aisles, hand-selected products, and a team that genuinely cares.</p>
+      </div>
+
+      <!-- Store 1: Madhapur -->
+      <div class="store-card">
+        <div class="store-card__image">
+          <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=900&q=80" alt="PawsParadise Madhapur Store – wide shelves and bright aisles" loading="lazy" />
+          <div class="store-card__badge">Flagship Store</div>
+        </div>
+        <div class="store-card__content">
+          <span class="store-card__location"><i class="fa-solid fa-location-dot"></i> Madhapur, Hyderabad</span>
+          <h3>Madhapur Store</h3>
+          <p>Our flagship location nestled in the heart of Madhapur. Spanning over 2,000 sq ft, it houses an exhaustive range of premium pet food, accessories, toys, and a full-service grooming spa loved by pet owners across the city.</p>
+          <ul class="store-card__features">
+            <li><i class="fa-solid fa-check-circle"></i> 2,000+ SKUs in stock</li>
+            <li><i class="fa-solid fa-check-circle"></i> On-site Grooming Spa</li>
+            <li><i class="fa-solid fa-check-circle"></i> Expert Pet Nutritionists</li>
+            <li><i class="fa-solid fa-check-circle"></i> Ample Parking</li>
+          </ul>
+          <div class="store-card__meta">
+            <div><i class="fa-regular fa-clock"></i> Mon–Sun: 9:00 AM – 9:00 PM</div>
+            <div><i class="fa-solid fa-phone"></i> +91 40-0000-0001</div>
+          </div>
+          <div class="store-card__actions">
+            <a href="https://maps.google.com" class="btn btn--primary" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+            <a href="tel:+914000000001" class="btn btn--outline"><i class="fa-solid fa-phone"></i> Call Store</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Store 2: Nallagandla -->
+      <div class="store-card store-card--reverse">
+        <div class="store-card__image">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=900&q=80" alt="PawsParadise Nallagandla Store – organized product aisles" loading="lazy" />
+          <div class="store-card__badge store-card__badge--green">New Location</div>
+        </div>
+        <div class="store-card__content">
+          <span class="store-card__location"><i class="fa-solid fa-location-dot"></i> Nallagandla, Hyderabad</span>
+          <h3>Nallagandla Store</h3>
+          <p>Our newest and most modern location in Nallagandla brings the full PawsParadise experience to Hyderabad's west. Beautifully designed interiors, a curated product floor, and a welcoming team await you and your furry companion.</p>
+          <ul class="store-card__features">
+            <li><i class="fa-solid fa-check-circle"></i> Modern Store Design</li>
+            <li><i class="fa-solid fa-check-circle"></i> Full Grooming Services</li>
+            <li><i class="fa-solid fa-check-circle"></i> Pet Health Corner</li>
+            <li><i class="fa-solid fa-check-circle"></i> Easy Highway Access</li>
+          </ul>
+          <div class="store-card__meta">
+            <div><i class="fa-regular fa-clock"></i> Mon–Sun: 9:00 AM – 9:00 PM</div>
+            <div><i class="fa-solid fa-phone"></i> +91 40-0000-0002</div>
+          </div>
+          <div class="store-card__actions">
+            <a href="https://maps.google.com" class="btn btn--primary" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+            <a href="tel:+914000000002" class="btn btn--outline"><i class="fa-solid fa-phone"></i> Call Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCT CATEGORIES SECTION
+  ============================================================ -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Everything Your Pet<br />Could Ever Want</h2>
+        <p class="section-sub">From vet-recommended nutrition to interactive toys that spark joy — we've handpicked the best for your beloved companions.</p>
+      </div>
+
+      <!-- Tab Toggle -->
+      <div class="cat-tabs">
+        <button class="cat-tab active" data-tab="food"><i class="fa-solid fa-bowl-food"></i> Pet Food</button>
+        <button class="cat-tab" data-tab="toys"><i class="fa-solid fa-baseball"></i> Toys & Play</button>
+      </div>
+
+      <!-- Food Categories -->
+      <div class="cat-grid" id="tab-food">
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=600&q=80" alt="Puppy Food" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Puppy Food</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=600&q=80" alt="Adult Dog Food" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Adult Dog Food</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="Cat Food" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Cat Food</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Grain-Free Food" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Grain-Free Food</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Treats & Snacks" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Treats & Snacks</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1615751072497-5f5169febe17?w=600&q=80" alt="Vet-Recommended Food" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Vet-Recommended</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toy Categories -->
+      <div class="cat-grid hidden" id="tab-toys">
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&q=80" alt="Chew Toys" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Chew Toys</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600&q=80" alt="Interactive Toys" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Interactive Toys</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&q=80" alt="Training Toys" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Training Toys</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?w=600&q=80" alt="Balls and Ropes" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Balls & Ropes</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80" alt="Cat Teaser Toys" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Cat Teaser Toys</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&q=80" alt="Accessories" loading="lazy" />
+            <div class="cat-card__overlay">
+              <a href="#" class="btn btn--sm btn--white">Shop Now</a>
+            </div>
+          </div>
+          <div class="cat-card__label">
+            <span>Accessories</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY VISIT US – Stats + Trust Section
+  ============================================================ -->
+  <section class="why-us" id="why-us">
+    <!-- Background image with overlay -->
+    <div class="why-us__bg"></div>
+    <div class="why-us__overlay"></div>
+
+    <div class="container why-us__inner">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--light">Why PawsParadise?</span>
+        <h2 class="section-title">Hyderabad's Most Trusted<br />Pet Store Since 2016</h2>
+        <p class="section-sub">We don't just sell products — we build relationships, support families, and champion the wellbeing of every pet we meet.</p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <div class="stat-card__number" data-target="8">0</div>
+          <div class="stat-card__unit">+ Years</div>
+          <div class="stat-card__label">Serving Hyderabad</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon"><i class="fa-solid fa-store"></i></div>
+          <div class="stat-card__number" data-target="3">0</div>
+          <div class="stat-card__unit">Locations</div>
+          <div class="stat-card__label">Stores & Grooming Spas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon"><i class="fa-solid fa-heart"></i></div>
+          <div class="stat-card__number" data-target="10000">0</div>
+          <div class="stat-card__unit">+</div>
+          <div class="stat-card__label">Happy Pets Served</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="stat-card__number" data-target="100">0</div>
+          <div class="stat-card__unit">%</div>
+          <div class="stat-card__label">Pet-Safe Products</div>
+        </div>
+      </div>
+
+      <!-- Features List -->
+      <div class="why-us__features">
+        <div class="why-feature">
+          <div class="why-feature__icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <div>
+            <h4>Vet-Endorsed Products</h4>
+            <p>Every product on our shelves has been evaluated for quality, safety, and nutritional value by certified pet health experts.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature__icon"><i class="fa-solid fa-scissors"></i></div>
+          <div>
+            <h4>Premium Grooming Spa</h4>
+            <p>Certified groomers who treat your pet with patience and love — baths, trims, nail care, and full spa packages available.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature__icon"><i class="fa-solid fa-headset"></i></div>
+          <div>
+            <h4>Expert Pet Advice</h4>
+            <p>Not sure what food your pup needs? Our knowledgeable team is always ready to guide you with personalised recommendations.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature__icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div>
+            <h4>Fast Home Delivery</h4>
+            <p>Can't visit us? Order online and get your pet's essentials delivered to your door — quickly, safely, and affordably.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Cluster -->
+      <div class="why-us__cta">
+        <a href="#stores" class="btn btn--hero-primary"><i class="fa-solid fa-store"></i> Visit Store Today</a>
+        <a href="https://maps.google.com" class="btn btn--hero-outline" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+        <a href="tel:+914000000000" class="btn btn--hero-icon" title="Call Now"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/914000000000" class="btn btn--hero-icon btn--wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CUSTOMER REVIEWS SECTION
+  ============================================================ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Customer Love</span>
+        <h2 class="section-title">Stories From Our<br />Happy Pet Families</h2>
+        <p class="section-sub">Thousands of Hyderabad pet owners trust us — here's what some of them have to say.</p>
+      </div>
+
+      <!-- Review Cards Carousel -->
+      <div class="reviews__track-wrapper">
+        <div class="reviews__track" id="reviewTrack">
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80" alt="Priya Sharma" />
+              <div>
+                <h4>Priya Sharma</h4>
+                <span>Golden Retriever Mom</span>
+              </div>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p>"Absolutely the best pet store in Hyderabad! The staff at Madhapur helped me choose the perfect grain-free diet for my 2-year-old retriever. Bruno has never been healthier. The grooming spa is an absolute gem!"</p>
+            <div class="review-card__footer">
+              <i class="fa-brands fa-google"></i> Google Review
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80" alt="Ravi Kumar" />
+              <div>
+                <h4>Ravi Kumar</h4>
+                <span>Labrador Dad</span>
+              </div>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p>"Found the Nallagandla store recently and it's incredibly well-stocked. The aisles are wide, products are well-organized, and the team genuinely loves animals. My Lab, Rocky, loves visiting — he gets so excited at the door!"</p>
+            <div class="review-card__footer">
+              <i class="fa-brands fa-google"></i> Google Review
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&q=80" alt="Anjali Reddy" />
+              <div>
+                <h4>Anjali Reddy</h4>
+                <span>Cat Parent of Two</span>
+              </div>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p>"As a cat mom, I was struggling to find the right wet food for my senior Persian. The nutrition expert at PawsParadise took 20 minutes to explain my options. No pressure, just genuine care. Highly recommend!"</p>
+            <div class="review-card__footer">
+              <i class="fa-brands fa-google"></i> Google Review
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=100&h=100&fit=crop&q=80" alt="Suresh Nair" />
+              <div>
+                <h4>Suresh Nair</h4>
+                <span>Beagle Owner</span>
+              </div>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <p>"The grooming spa is top-notch. My beagle Biscuit always comes out looking (and smelling!) like royalty. They're gentle, patient and clearly trained professionals. 10/10 would recommend to every pet owner!"</p>
+            <div class="review-card__footer">
+              <i class="fa-brands fa-google"></i> Google Review
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&q=80" alt="Meena Patel" />
+              <div>
+                <h4>Meena Patel</h4>
+                <span>Pomeranian & Parrot Parent</span>
+              </div>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p>"Love that they stock products for both dogs AND birds. I was surprised to find great parrot enrichment toys here. The store design is beautiful and clean — feels very premium. My whole family loves visiting on weekends!"</p>
+            <div class="review-card__footer">
+              <i class="fa-brands fa-google"></i> Google Review
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Review Nav Arrows -->
+      <div class="reviews__nav">
+        <button class="reviews__arrow" id="reviewPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="reviews__dots" id="reviewDots"></div>
+        <button class="reviews__arrow" id="reviewNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VIDEO WALKTHROUGH SECTION
+  ============================================================ -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="video-section__inner">
+        <div class="video-section__content">
+          <span class="section-tag">Store Walkthrough</span>
+          <h2 class="section-title">See Our Store<br />Come to Life</h2>
+          <p>Join Prabhash on an exclusive walkthrough of our Madhapur flagship — from the curated food aisles to our grooming spa. Get a feel for the warmth and quality that makes PawsParadise special.</p>
+          <ul class="video-section__list">
+            <li><i class="fa-solid fa-play-circle"></i> Full store tour</li>
+            <li><i class="fa-solid fa-play-circle"></i> Grooming spa preview</li>
+            <li><i class="fa-solid fa-play-circle"></i> Meet our expert team</li>
+          </ul>
+          <a href="https://www.instagram.com" class="btn btn--primary" target="_blank"><i class="fa-brands fa-instagram"></i> Watch on Instagram</a>
+        </div>
+        <div class="video-section__player">
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?w=800&q=80" alt="Store Walkthrough Video Thumbnail" loading="lazy" />
+            <div class="video-thumb__overlay">
+              <button class="video-play-btn" onclick="alert('Video coming soon! Follow us on Instagram @pawsparadise_hyd')">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <span>Watch Store Tour</span>
+            </div>
+          </div>
+          <!-- Instagram-style reel card -->
+          <div class="video-reel-badge">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <strong>@pawsparadise_hyd</strong>
+              <span>Instagram Reel with Prabhash</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STORE LOCATION SECTION
+  ============================================================ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">We're Close by & Easy<br />to Reach</h2>
+        <p class="section-sub">Two convenient locations across Hyderabad — come in, browse, and let us pamper your pet.</p>
+      </div>
+
+      <div class="location__grid">
+        <!-- Map Embed -->
+        <div class="location__map">
+          <div class="map-placeholder">
+            <div class="map-placeholder__inner">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>Interactive Map</p>
+              <span>Madhapur & Nallagandla, Hyderabad</span>
+              <a href="https://maps.google.com" class="btn btn--primary btn--sm" target="_blank"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store Address Cards -->
+        <div class="location__addresses">
+          <div class="address-card">
+            <div class="address-card__icon"><i class="fa-solid fa-store"></i></div>
+            <div class="address-card__content">
+              <h4>Madhapur Store</h4>
+              <p>123, Hi-Tech City Road, Madhapur,<br />Hyderabad – 500081, Telangana</p>
+              <div class="address-card__detail"><i class="fa-regular fa-clock"></i> Mon–Sun: 9:00 AM – 9:00 PM</div>
+              <div class="address-card__detail"><i class="fa-solid fa-phone"></i> +91 40-0000-0001</div>
+              <div class="address-card__actions">
+                <a href="https://maps.google.com" class="btn btn--sm btn--primary" target="_blank"><i class="fa-solid fa-location-dot"></i> Directions</a>
+                <a href="tel:+914000000001" class="btn btn--sm btn--outline"><i class="fa-solid fa-phone"></i> Call</a>
+                <a href="https://wa.me/914000000001" class="btn btn--sm btn--wa-solid"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="address-card">
+            <div class="address-card__icon address-card__icon--green"><i class="fa-solid fa-store"></i></div>
+            <div class="address-card__content">
+              <h4>Nallagandla Store</h4>
+              <p>45, Nallagandla Main Road,<br />Hyderabad – 500019, Telangana</p>
+              <div class="address-card__detail"><i class="fa-regular fa-clock"></i> Mon–Sun: 9:00 AM – 9:00 PM</div>
+              <div class="address-card__detail"><i class="fa-solid fa-phone"></i> +91 40-0000-0002</div>
+              <div class="address-card__actions">
+                <a href="https://maps.google.com" class="btn btn--sm btn--primary" target="_blank"><i class="fa-solid fa-location-dot"></i> Directions</a>
+                <a href="tel:+914000000002" class="btn btn--sm btn--outline"><i class="fa-solid fa-phone"></i> Call</a>
+                <a href="https://wa.me/914000000002" class="btn btn--sm btn--wa-solid"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA FOOTER SECTION
+  ============================================================ -->
+  <section class="cta-section">
+    <div class="cta-section__bg"></div>
+    <div class="cta-section__overlay"></div>
+    <div class="container cta-section__inner">
+      <span class="section-tag section-tag--light">Ready to Visit?</span>
+      <h2>Your Pet Deserves the Best.<br /><em>Come See It in Person.</em></h2>
+      <p>Walk into either of our Hyderabad stores and discover a world built around your pet's happiness, health, and joy. Our team can't wait to meet you.</p>
+      <div class="cta-section__actions">
+        <a href="#stores" class="btn btn--hero-primary btn--lg"><i class="fa-solid fa-store"></i> Visit Store Today</a>
+        <a href="https://maps.google.com" class="btn btn--hero-outline btn--lg" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+        <a href="tel:+914000000000" class="btn btn--hero-icon btn--lg-icon" title="Call Now"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/914000000000" class="btn btn--hero-icon btn--wa btn--lg-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <!-- Contact Info Bar -->
+      <div class="cta-section__contact">
+        <div><i class="fa-solid fa-phone"></i> +91 40-0000-0001</div>
+        <div><i class="fa-solid fa-phone"></i> +91 40-0000-0002</div>
+        <div><i class="fa-solid fa-envelope"></i> hello@pawsparadise.in</div>
+        <div><i class="fa-regular fa-clock"></i> Open Daily: 9 AM – 9 PM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <!-- Brand -->
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-icon"><i class="fa-solid fa-paw"></i></span>
+          <span class="nav__logo-text">Paws<strong>Paradise</strong></span>
+        </a>
+        <p>Hyderabad's most-loved pet store. Premium products, expert advice, and a community built on the love of animals.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/914000000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#stores">Our Stores</a></li>
+          <li><a href="#categories">Pet Food</a></li>
+          <li><a href="#categories">Toys & Accessories</a></li>
+          <li><a href="#why-us">Grooming Spa</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Find Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__col">
+        <h5>Get In Touch</h5>
+        <ul class="footer__contact">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+914000000001">+91 40-0000-0001</a> <small>(Madhapur)</small></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+914000000002">+91 40-0000-0002</a> <small>(Nallagandla)</small></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/914000000000">WhatsApp Chat</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@pawsparadise.in">hello@pawsparadise.in</a></li>
+          <li><i class="fa-regular fa-clock"></i> Mon–Sun: 9:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Hours -->
+      <div class="footer__col">
+        <h5>Store Hours</h5>
+        <ul class="footer__hours">
+          <li><span>Monday – Friday</span><span>9:00 AM – 9:00 PM</span></li>
+          <li><span>Saturday</span><span>9:00 AM – 9:00 PM</span></li>
+          <li><span>Sunday</span><span>9:00 AM – 8:00 PM</span></li>
+          <li class="footer__hours--open"><span>Today</span><span><i class="fa-solid fa-circle"></i> Open Now</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2024 PawsParadise Pet Store. All rights reserved. Built with <i class="fa-solid fa-heart"></i> for Hyderabad's Pets.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/914000000000" class="floating-wa" title="Chat on WhatsApp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Chat with Us</span>
+  </a>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // ── Navbar scroll effect ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav--scrolled', window.scrollY > 60);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // ── Mobile menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+
+    // ── Hero slider ──
+    const slides = document.querySelectorAll('.hero__slide');
+    const dots = document.querySelectorAll('.hero__dot');
+    let currentSlide = 0;
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    slides[0].classList.add('active');
+    setInterval(() => goToSlide(currentSlide + 1), 5000);
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+
+    // ── Category tabs ──
+    document.querySelectorAll('.cat-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelectorAll('.cat-grid').forEach(g => g.classList.add('hidden'));
+        document.getElementById('tab-' + tab.dataset.tab).classList.remove('hidden');
+      });
+    });
+
+    // ── Review carousel ──
+    const track = document.getElementById('reviewTrack');
+    const cards = track.querySelectorAll('.review-card');
+    const dotsContainer = document.getElementById('reviewDots');
+    let cardIndex = 0;
+    let visibleCards = () => window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      const count = cards.length - visibleCards() + 1;
+      for (let i = 0; i <= cards.length - visibleCards(); i++) {
+        const d = document.createElement('span');
+        d.classList.add('review-dot');
+        if (i === 0) d.classList.add('active');
+        d.addEventListener('click', () => scrollReview(i));
+        dotsContainer.appendChild(d);
+      }
+    }
+    function scrollReview(idx) {
+      const cardW = cards[0].offsetWidth + 24;
+      cardIndex = Math.max(0, Math.min(idx, cards.length - visibleCards()));
+      track.style.transform = `translateX(-${cardIndex * cardW}px)`;
+      dotsContainer.querySelectorAll('.review-dot').forEach((d, i) => d.classList.toggle('active', i === cardIndex));
+    }
+    document.getElementById('reviewPrev').addEventListener('click', () => scrollReview(cardIndex - 1));
+    document.getElementById('reviewNext').addEventListener('click', () => scrollReview(cardIndex + 1));
+    buildDots();
+    window.addEventListener('resize', () => { buildDots(); scrollReview(0); });
+
+    // ── Stat counter animation ──
+    const counters = document.querySelectorAll('.stat-card__number');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          const duration = 1800;
+          const step = Math.ceil(target / (duration / 16));
+          let current = 0;
+          const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = current.toLocaleString();
+            if (current >= target) clearInterval(timer);
+          }, 16);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => observer.observe(c));
+
+    // ── Scroll to top ──
+    document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ── Smooth scroll polyfill for anchor links ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); closeMobile(); }
+      });
+    });
+
+    // ── Intersection reveal ──
+    const revealEls = document.querySelectorAll('.store-card, .cat-card, .stat-card, .why-feature, .review-card, .address-card');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObs.observe(el));
+  </script>
+</body>
+</html>
